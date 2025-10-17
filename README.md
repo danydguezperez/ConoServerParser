@@ -12,11 +12,11 @@ Conus snails (genus *Conus*) produce venom peptides known as conopeptides, which
 specific for ion channels and receptors.  This specificity makes
 conotoxins invaluable for physiological studies and potential drug development.
 With more than 700 *Conus* species and thousands of distinct peptides, conotoxin research spans
-evolutionary biology and neurophysiology.  Conopeptides are classified
-into disulfide‑rich and disulfide‑poor peptides and categorised by pharmacological family,
-gene superfamily and cysteine framework.  These classifications and
-the sheer diversity of conotoxins underscore the need for tools like ConoServerParser to
-facilitate downstream analysis of ConoServer data.
+evolutionary biology and neurophysiology.  Conopeptides are classified into disulfide‑rich and disulfide‑poor peptides and categorised by pharmacological family, gene superfamily and cysteine framework.
+
+![Overview of sequence distributions](images/overview_plot.png)
+
+Although ConoServer is a comprehensive resource, researchers often encounter practical limitations when preparing conopeptide data for downstream workflows. Retrieving sequences from ConoServer can introduce formatting errors in FASTA files and downstream prediction tools such as ConoPrec frequently fail to handle multi‑sequence inputs or export mature peptides as FASTA files. ConoServerParser addresses these challenges by providing reliable FASTA parsing, intelligent metadata extraction and customisable exports, making it easy to prepare clean datasets for further analysis in biodiscovery tools such as StarPep, machine‑learning pipelines and other sequence analysis platforms.
 
 The application is described in a [PagBioMicS blog post](https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver).
 A video tutorial demonstrating how to use the app is also available on [YouTube](https://www.youtube.com/watch?v=ZgRrB305xRg).
@@ -58,7 +58,7 @@ This repository contains the source code and example data used by the Shiny app:
 | `ConoServerParser_precursors_2025-06-02.fasta` | Example FASTA file exported from ConoServer (dated 2025‑06‑02) containing a compilation of conotoxin precursor sequences.  Each header follows ConoServer’s pipe‑delimited format `identifier|name|organism|protein type|toxin class|gene superfamily|cysteine framework|pharmacological family|evidence`, mirroring the format used by the database. |
 | `data/` | Contains auxiliary data files used by the application. |
 | `data/conoserver_protein.fa` | Decompressed FASTA file containing the full set of ConoServer protein sequences (downloaded from the `conoserver_protein.fa.gz` archive).  Included for demonstration purposes and to illustrate how the app handles bulk sequence datasets. |
-| `data/Y_superfamily.csv` | Sample dataset of conotoxin precursors belonging to the Y gene superfamily.  Columns include the signal peptide, propeptide (pre) region, mature region, post region, gene superfamily, cysteine framework, post‑translational modifications (pyroglutamate, γ‑carboxyglutamate, amidation), a “Closest” sequence label and percentage identity.  This dataset demonstrates how ConoServerParser can filter, summarise and export complex metadata. |
+| `data/Y_superfamily.csv` | Sample dataset of conotoxin precursors belonging to the Y gene superfamily.  Columns include the signal peptide, propeptide (pre) region, mature region, post region, gene superfamily, cysteine framework, post‑translational modifications, a “Closest” sequence label and percentage identity.  This dataset demonstrates how ConoServerParser can filter, summarise and export complex metadata. |
 
 Deployment‑specific files (`rsconnect/`) and temporary files (`.RData`, `.Rhistory`, `.DS_Store`) are
 omitted from this repository to keep it clean and portable.
@@ -105,7 +105,7 @@ If you prefer not to run the app locally, a hosted version is available at
 The following sources provide background information and should be cited when using
 ConoServerParser in your research:
 
-- **PagBioMicS Blog Article:** *ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer*. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver
+- **PagBioMicS Blog (Jun 12 2025) – Dany Domínguez Pérez:** *ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer*. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver. See also the [video tutorial](https://www.youtube.com/watch?v=ZgRrB305xRg) for a demonstration of the app.
 - Kaas Q, Yu R, Jin AH, Dutertre S, Craik DJ. (2012). ConoServer: updated content, knowledge, and discovery tools in the conopeptide database. *Nucleic Acids Research*, 40(Database issue): D325–D330.
 - Kaas Q, Westermann JC, Halai R, Wang CK, Craik DJ. (2008). ConoServer, a database for conopeptide sequences and structures. *Bioinformatics*, 24(3): 445–446.
 - **ConoServer database:** https://www.conoserver.org/ (accessed May 20 2025).
