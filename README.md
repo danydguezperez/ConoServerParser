@@ -2,7 +2,7 @@
 
 ## Overview
 
-[ConoServerParser is an R/Shiny application]([https://www.conoserver.org/index.php](https://danysaurio.shinyapps.io/ConoServerParser/)) designed to complement [ConoServer](https://www.conoserver.org/index.php) by addressing
+[ConoServerParser is an R/Shiny application](https://danysaurio.shinyapps.io/ConoServerParser/) designed to complement [ConoServer](https://www.conoserver.org/index.php) by addressing
 practical limitations encountered when working with conotoxin sequence data.  Built for
 researchers studying the diverse venom peptides produced by marine cone snails, ConoServerParser
 streamlines the process of parsing interactively ConoServer’s pipe‑delimited FASTA headers, performing
