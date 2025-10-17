@@ -9,18 +9,17 @@ streamlines the process of parsing ConoServer’s pipe‑delimited FASTA headers
 metadata‑driven filtering and visualisation, and exporting customised sequence sets.
 
 Conus snails (genus *Conus*) produce venom peptides known as conopeptides, which are highly
-specific for ion channels and receptors【953987192211277†L20-L25】.  This specificity makes
-conotoxins invaluable for physiological studies and potential drug development【953987192211277†L20-L25】.
+specific for ion channels and receptors.  This specificity makes
+conotoxins invaluable for physiological studies and potential drug development.
 With more than 700 *Conus* species and thousands of distinct peptides, conotoxin research spans
-evolutionary biology and neurophysiology【953987192211277†L26-L37】.  Conopeptides are classified
+evolutionary biology and neurophysiology.  Conopeptides are classified
 into disulfide‑rich and disulfide‑poor peptides and categorised by pharmacological family,
-gene superfamily and cysteine framework【953987192211277†L39-L49】.  These classifications and
+gene superfamily and cysteine framework.  These classifications and
 the sheer diversity of conotoxins underscore the need for tools like ConoServerParser to
 facilitate downstream analysis of ConoServer data.
 
-The application was developed and described in the [PagBioMicS blog post](https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver)
-by Dany Domínguez‑Pérez (June 12 2025).  A video tutorial demonstrating how to use the app
-is also available on [YouTube](https://www.youtube.com/watch?v=ZgRrB305xRg).
+The application is described in a [PagBioMicS blog post](https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver).
+A video tutorial demonstrating how to use the app is also available on [YouTube](https://www.youtube.com/watch?v=ZgRrB305xRg).
 
 ### Key features
 
@@ -31,23 +30,23 @@ and groups overlapping items where appropriate:
  - **FASTA parsing and metadata extraction** – Reliably interprets ConoServer’s
    pipe‑delimited headers to extract fields such as ConoID, species, gene superfamily,
    pharmacological family, cysteine framework and evidence level into a clean tabular
-   format【953987192211277†L149-L152】.
+   format.
  - **Customisable FASTA export and header preview** – Allows you to construct new FASTA
    headers using selected metadata fields and custom delimiters, preview how the final
    headers will look and avoid oversized or unnecessary fields.  You can also group
    downloads by superfamily or pharmacological category and export grouped archives as
-   ZIP files【953987192211277†L153-L158】【953987192211277†L168-L174】.
+   ZIP files.
  - **Multi‑format table export** – Enables downloading of filtered sequence metadata tables
-   in CSV, TSV or XLSX formats for downstream analysis【953987192211277†L156-L158】【953987192211277†L179-L179】.
+   in CSV, TSV or XLSX formats for downstream analysis.
  - **Mature peptide FASTA generation** – Automatically extracts and formats mature
    sequences from ConoPrec CSV outputs, overcoming the multi‑sequence limitations of
-   downstream tools【953987192211277†L159-L161】【953987192211277†L175-L176】.
+   downstream tools.
  - **Interactive filtering and exploration** – Provides an intuitive interface with
    dropdowns and search tools to select, filter and exclude sequences by any field
-   (superfamily, pharmacological family, evidence level, etc.)【953987192211277†L162-L164】【953987192211277†L177-L177】.
+   (superfamily, pharmacological family, evidence level, etc.).
  - **Dynamic visual summaries and data visualisation** – Generates interactive bar plots
    comparing sequence distributions across superfamilies, pharmacological families or
-   evidence types and other visualisations to summarise your data【953987192211277†L165-L166】【953987192211277†L178-L178】.
+   evidence types and other visualisations to summarise your data.
 
 ## Repository contents
 
@@ -56,10 +55,10 @@ This repository contains the source code and example data used by the Shiny app:
 | File/folder | Description |
 |---|---|
 | `ConoServerParser.R` | Main Shiny application script. Running this file launches the app locally. |
-| `ConoServerParser_precursors_2025-06-02.fasta` | Example precursor FASTA file exported from ConoServer (dated 2025‑06‑02) containing sequence data used to demonstrate the app. |
+| `ConoServerParser_precursors_2025-06-02.fasta` | Example FASTA file exported from ConoServer (dated 2025‑06‑02) containing a compilation of conotoxin precursor sequences.  Each header follows ConoServer’s pipe‑delimited format `identifier|name|organism|protein type|toxin class|gene superfamily|cysteine framework|pharmacological family|evidence`, mirroring the format used by the database. |
 | `data/` | Contains auxiliary data files used by the application. |
-| `data/conoserver_protein.fa` | FASTA file containing a larger set of protein sequences from ConoServer. |
-| `data/Y_superfamily.csv` | Reference table mapping ConoServer ConoIDs to Y superfamily designations, used for example analyses. |
+| `data/conoserver_protein.fa` | Decompressed FASTA file containing the full set of ConoServer protein sequences (downloaded from the `conoserver_protein.fa.gz` archive).  Included for demonstration purposes and to illustrate how the app handles bulk sequence datasets. |
+| `data/Y_superfamily.csv` | Sample dataset of conotoxin precursors belonging to the Y gene superfamily.  Columns include the signal peptide, propeptide (pre) region, mature region, post region, gene superfamily, cysteine framework, post‑translational modifications (pyroglutamate, γ‑carboxyglutamate, amidation), a “Closest” sequence label and percentage identity.  This dataset demonstrates how ConoServerParser can filter, summarise and export complex metadata. |
 
 Deployment‑specific files (`rsconnect/`) and temporary files (`.RData`, `.Rhistory`, `.DS_Store`) are
 omitted from this repository to keep it clean and portable.
@@ -101,13 +100,16 @@ If you prefer not to run the app locally, a hosted version is available at
 [ConoServerParser on shinyapps.io](https://danysaurio.shinyapps.io/ConoServerParser)
 (availability may vary depending on usage limits).
 
-## Citation
+## References
 
-If you use ConoServerParser in your research, please cite the PagBioMicS blog article and
-acknowledge Dany Domínguez‑Pérez:
+The following sources provide background information and should be cited when using
+ConoServerParser in your research:
 
-> Domínguez‑Pérez, D. (2025). *ConoServerParser: A Flexible Shiny Application for Filtering,
-> Exploring, and Exporting Conotoxin Sequences from ConoServer*. PagBioMicS Blog, June 12 2025【953987192211277†L11-L15】.
+- **PagBioMicS Blog Article:** *ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer*. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver
+- Kaas Q, Yu R, Jin AH, Dutertre S, Craik DJ. (2012). ConoServer: updated content, knowledge, and discovery tools in the conopeptide database. *Nucleic Acids Research*, 40(Database issue): D325–D330.
+- Kaas Q, Westermann JC, Halai R, Wang CK, Craik DJ. (2008). ConoServer, a database for conopeptide sequences and structures. *Bioinformatics*, 24(3): 445–446.
+- **ConoServer database:** https://www.conoserver.org/ (accessed May 20 2025).
+- **Intrathecal Pain Management**. (2023). In *Pain Management: Anesthesia, Analgesia, and Opioid Alternatives*.
 
 ## License
 
