@@ -24,7 +24,7 @@ A video tutorial demonstrating how to use the app is also available on [YouTube]
 ### Key features
 
 ConoServerParser brings together a suite of tools designed to make ConoServer data easier to
-work with.  The application implements the capabilities described in the PagBioMicS article
+work with.  The application implements the capabilities described in the PagBiOmicS article
 and groups overlapping items where appropriate:
 
  - **FASTA parsing and metadata extraction** – Reliably interprets ConoServer’s
