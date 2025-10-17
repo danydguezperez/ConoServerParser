@@ -105,7 +105,7 @@ If you prefer not to run the app locally, a hosted version is available at
 The following sources provide background information and should be cited when using
 ConoServerParser in your research:
 
-- **Dany Domínguez Pérez – PagBioMicS Blog (Jun 12 2025):** *ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer*. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver. See also the [video tutorial](https://www.youtube.com/watch?v=ZgRrB305xRg) for a demonstration of the app.
+- **Dany Domínguez Pérez – PagBiOmicS Blog (Jun 12 2025):** *ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer*. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver. See also the [video tutorial](https://www.youtube.com/watch?v=ZgRrB305xRg) for a demonstration of the app.
 - Kaas Q, Yu R, Jin AH, Dutertre S, Craik DJ. (2012). ConoServer: updated content, knowledge, and discovery tools in the conopeptide database. *Nucleic Acids Research*, 40(Database issue): D325–D330.
 - Kaas Q, Westermann JC, Halai R, Wang CK, Craik DJ. (2008). ConoServer, a database for conopeptide sequences and structures. *Bioinformatics*, 24(3): 445–446.
 - **ConoServer database:** https://www.conoserver.org/ (accessed May 20 2025).
