@@ -2,7 +2,7 @@
 
 ## Overview
 
-[ConoServerParser is an R/Shiny application](https://danysaurio.shinyapps.io/ConoServerParser/) designed to complement [ConoServer](https://www.conoserver.org/index.php) by addressing
+ConoServerParser is an R/Shiny application designed to complement **ConoServer** by addressing
 practical limitations encountered when working with conotoxin sequence data.  Built for
 researchers studying the diverse venom peptides produced by marine cone snails, ConoServerParser
 streamlines the process of parsing interactively ConoServer’s pipe‑delimited FASTA headers, performing
@@ -16,7 +16,7 @@ evolutionary biology and neurophysiology.  Conopeptides are classified into disu
 
 ![Overview of sequence distributions](images/overview_plot.png)
 
-Although ConoServer is a comprehensive resource, researchers often encounter practical limitations when preparing conopeptide data for downstream workflows. Retrieving sequences from ConoServer can introduce formatting errors in FASTA files and downstream prediction tools such as ConoPrec frequently fail to handle multi‑sequence inputs or export mature peptides as FASTA files. ConoServerParser addresses these challenges by providing reliable FASTA parsing, intelligent metadata extraction and customisable exports, making it easy to prepare clean datasets for further analysis in biodiscovery tools such as StarPep, machine‑learning pipelines and other sequence analysis platforms.
+Although ConoServer is a comprehensive resource, researchers often encounter practical limitations when preparing conopeptide data for downstream workflows. Retrieving sequences from ConoServer can introduce formatting errors in FASTA files and downstream prediction tools such as ConoPrec frequently fail to handle multi‑sequence inputs or export mature peptides as FASTA files. ConoServerParser addresses these challenges by providing reliable FASTA parsing, intelligent metadata extraction and customisable exports, making it easy to prepare clean datasets for further downstream analyses or as input for [complex biodiscovery pipelines](https://www.conoserver.org/index.php), and making it easier to handle metadata for tools such as [StarPep](https://doi.org/10.1093/bioinformatics/btad506), machine‑learning pipelines and other sequence analysis platforms.
 
 The application is described in a [PagBiOmicS blog post](https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver).
 A video tutorial demonstrating how to use the app is also available on [YouTube](https://www.youtube.com/watch?v=ZgRrB305xRg).
@@ -24,7 +24,7 @@ A video tutorial demonstrating how to use the app is also available on [YouTube]
 ### Key features
 
 ConoServerParser brings together a suite of tools designed to make ConoServer data easier to
-work with.  The application implements the capabilities described in the PagBiOmicS article
+work with.  The application implements the capabilities described in the PagBioMicS article
 and groups overlapping items where appropriate:
 
  - **FASTA parsing and metadata extraction** – Reliably interprets ConoServer’s
@@ -105,10 +105,13 @@ If you prefer not to run the app locally, a hosted version is available at
 The following sources provide background information and should be cited when using
 ConoServerParser in your research:
 
-- Dany Domínguez Pérez – *PagBiOmicS Blog* (Jun 12 2025): ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver. See also the [video tutorial](https://www.youtube.com/watch?v=ZgRrB305xRg) for a demonstration of the app.
+- **Dany Domínguez Pérez – PagBiOmicS Blog (Jun 12 2025):** *ConoServerParser: A Flexible Shiny Application for Filtering, Exploring, and Exporting Conotoxin Sequences from ConoServer*. Available at: https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver. See also the [video tutorial](https://www.youtube.com/watch?v=ZgRrB305xRg) for a demonstration of the app.
 - Kaas Q, Yu R, Jin AH, Dutertre S, Craik DJ. (2012). ConoServer: updated content, knowledge, and discovery tools in the conopeptide database. *Nucleic Acids Research*, 40(Database issue): D325–D330.
 - Kaas Q, Westermann JC, Halai R, Wang CK, Craik DJ. (2008). ConoServer, a database for conopeptide sequences and structures. *Bioinformatics*, 24(3): 445–446.
-- **ConoServer:** https://www.conoserver.org/ (accessed May 20 2025). *Intrathecal Pain Management*. (2023). In Pain Management: Anesthesia, Analgesia, and Opioid Alternatives.
+- **ConoServer database:** https://www.conoserver.org/ (accessed May 20 2025).
+- **Intrathecal Pain Management**. (2023). In *Pain Management: Anesthesia, Analgesia, and Opioid Alternatives*.
+- Agüero‑Chapin G., Domínguez‑Pérez D., Marrero‑Ponce Y., Castillo‑Mendieta K., Antunes A. (2024). *Unveiling encrypted antimicrobial peptides from Cephalopods’ salivary glands: a proteolysis‑driven virtual approach*. **ACS Omega**, 9(43), 43353–43367. https://doi.org/10.1021/acsomega.4c01959.
+- Aguilera‑Mendoza L., Ayala‑Ruano S., Martinez‑Rios F., Chavez E., García‑Jacas C. R., Brizuela C. A., Marrero‑Ponce Y. (2023). *StarPep Toolbox: an open‑source software to assist chemical space analysis of bioactive peptides and their functions using complex networks*. **Bioinformatics**, 39(8), Article btad506. https://doi.org/10.1093/bioinformatics/btad506.
 
 ## License
 
