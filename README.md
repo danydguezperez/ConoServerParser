@@ -5,7 +5,7 @@
 ConoServerParser is an R/Shiny application designed to complement **ConoServer** by addressing
 practical limitations encountered when working with conotoxin sequence data.  Built for
 researchers studying the diverse venom peptides produced by marine cone snails, ConoServerParser
-streamlines the process of parsing ConoServer’s pipe‑delimited FASTA headers, performing
+streamlines the process of parsing interactively ConoServer’s pipe‑delimited FASTA headers, performing
 metadata‑driven filtering and visualisation, and exporting customised sequence sets.
 
 Conus snails (genus *Conus*) produce venom peptides known as conopeptides, which are highly
@@ -18,7 +18,7 @@ evolutionary biology and neurophysiology.  Conopeptides are classified into disu
 
 Although ConoServer is a comprehensive resource, researchers often encounter practical limitations when preparing conopeptide data for downstream workflows. Retrieving sequences from ConoServer can introduce formatting errors in FASTA files and downstream prediction tools such as ConoPrec frequently fail to handle multi‑sequence inputs or export mature peptides as FASTA files. ConoServerParser addresses these challenges by providing reliable FASTA parsing, intelligent metadata extraction and customisable exports, making it easy to prepare clean datasets for further analysis in biodiscovery tools such as StarPep, machine‑learning pipelines and other sequence analysis platforms.
 
-The application is described in a [PagBioMicS blog post](https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver).
+The application is described in a [PagBiOmicS blog post](https://www.pagbiomics.com/blog/---conoserverparser--a-flexible-shiny-application-for-filtering--exploring--and-exporting-conotoxin-sequences-from-conoserver).
 A video tutorial demonstrating how to use the app is also available on [YouTube](https://www.youtube.com/watch?v=ZgRrB305xRg).
 
 ### Key features
